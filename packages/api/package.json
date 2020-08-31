@@ -12,15 +12,16 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "monk": "^7.3.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
+    "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "nodemon": "^2.0.4",
-    "eslint": "^7.8.1"
+    "nodemon": "^2.0.4"
   }
 }
