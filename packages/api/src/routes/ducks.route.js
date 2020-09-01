@@ -1,25 +1,12 @@
 const express = require('express');
+const { getAll, getById, insert, delete: remove, update } = require('../controllers/ducks.controller');
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
-  return res.send('get all route');
-});
-
-router.get('/:id', async (req, res) => {
-  return res.send('get by id route');
-});
-
-router.post('/', async (req, res) => {
-  return res.send('post route');
-});
-
-router.patch('/:id', (req, res) => {
-  return res.send('patch route');
-});
-
-router.delete('/:id', (req, res) => {
-  return res.send('delete route');
-});
+router.get('/', getAll);
+router.get('/:id', getById);
+router.post('/', insert);
+router.patch('/:id', update);
+router.delete('/:id', remove);
 
 module.exports = router;

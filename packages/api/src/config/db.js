@@ -1,5 +1,5 @@
 const monk = require('monk');
-const { MONGODB_ATLAS_URL } = require('./db');
+const { MONGODB_ATLAS_URL } = require('./env');
 
 const db = monk(MONGODB_ATLAS_URL);
 
