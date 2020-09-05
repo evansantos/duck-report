@@ -1,15 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/header/Header';
+import AddEntries from './views/AddEntries';
+import Entries from './views/Entries';
 
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route path="/" exact>
-          <h1>Add Entry Page</h1>
+          <AddEntries />
         </Route>
         <Route path="/entries">
-          <h1>Entries Page</h1>
+          <Entries />
         </Route>
         <Route path="*">
           <h1>Not found</h1>
