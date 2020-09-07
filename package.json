@@ -20,10 +20,12 @@
     ]
   },
   "scripts": {
-    "dev": "concurrently --kill-others \"yarn workspace web start\" \"yarn workspace api dev\""
+    "dev": "concurrently --kill-others \"yarn workspace web start\" \"yarn workspace api dev\"",
+    "start": "concurrently --kill-others \"yarn workspace web build && yarn workspace web serve -s build\" \"yarn workspace api start\""
   },
   "dependencies": {
     "concurrently": "^5.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "serve": "^11.3.2"
   }
 }

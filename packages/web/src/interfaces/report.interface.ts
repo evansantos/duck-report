@@ -1,10 +1,10 @@
 interface Report {
   _id?: string;
   datetime: string;
+  foodType: string;
   food: string;
   location: string;
   quantity: number;
-  foodType: string;
   amount: number;
   repeatSchedule?: boolean;
 }
